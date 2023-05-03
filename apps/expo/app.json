@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "Design System Example",
+    "slug": "Design System Example",
+    "version": "1.0.0",
+    "scheme": "Design System Example",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "bundleIdentifier": "com.designsystemexample"
+    },
+    "android": {
+      "package": "com.designsystemexample"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c877bc88-c555-4415-97f7-a0f501c568d1"
+      }
+    },
+    "owner": "gstj",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/c877bc88-c555-4415-97f7-a0f501c568d1"
+    }
+  }
+}

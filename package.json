@@ -1,0 +1,39 @@
+{
+  "name": "solito-expo-router",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-native": "^0.69.5",
+    "eslint": "^8.21.0",
+    "turbo": "^1.4.2",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "native": "cd apps/expo && yarn start",
+    "web": "cd apps/next && yarn next",
+    "server": "cd packages/server && yarn dev"
+  },
+  "resolutions": {
+    "metro": "^0.73.1",
+    "metro-resolver": "^0.73.1"
+  },
+  "nohoist": [
+    "**/expo-router",
+    "**/expo-router/**"
+  ],
+  "engines": {
+    "node": "^16.0.0"
+  },
+  "packageManager": "yarn@3.4.1",
+  "dependencies": {
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prefer-arrow-functions": "^3.1.4",
+    "eslint-plugin-react-native-a11y": "^3.3.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0"
+  }
+}
