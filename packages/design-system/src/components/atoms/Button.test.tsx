@@ -14,6 +14,7 @@ describe('Button', () => {
       const component = render(<Button variant={variant}>Press me</Button>, {
         wrapper: Provider,
       })
+
       expect(component).toMatchSnapshot()
     }
   )
