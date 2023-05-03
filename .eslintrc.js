@@ -5,6 +5,9 @@ module.exports = {
       rootDir: 'apps/next/',
     },
   },
+  env: {
+    jest: true,
+  },
   rules: {
     'no-console': 'warn',
     'import/no-duplicates': 'error',

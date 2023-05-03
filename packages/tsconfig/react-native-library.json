@@ -3,6 +3,7 @@
   "display": "React Native Library",
   "extends": "./base.json",
   "compilerOptions": {
+    "esModuleInterop": true,
     "allowJs": true,
     "jsx": "react",
     "lib": ["DOM", "ESNext"],

@@ -6,7 +6,7 @@ export interface ButtonProps
   extends Omit<React.ComponentProps<typeof Pressable>, 'variant'> {
   children: React.ReactNode
   isLoading?: boolean
-  variant: 'layout.primary' | 'layout.ghost'
+  variant?: 'layout.primary' | 'layout.ghost'
 }
 
 export const Button: React.FC<ButtonProps> = ({

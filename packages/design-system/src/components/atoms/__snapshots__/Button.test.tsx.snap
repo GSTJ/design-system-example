@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders layout.ghost variant 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  showCursor={true}
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderColor": "#FBC710",
+        "borderWidth": 2,
+      },
+      {
+        "opacity": 1,
+      },
+      {
+        "alignItems": "center",
+        "borderRadius": 2,
+        "justifyContent": "center",
+        "padding": 15,
+        "transition": "opacity 120ms ease-out",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {},
+        undefined,
+        {
+          "color": "#0A0A0A",
+          "fontWeight": "bold",
+        },
+      ]
+    }
+  >
+    Press me
+  </Text>
+</View>
+`;
+
+exports[`Button renders layout.primary variant 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  showCursor={true}
+  style={
+    [
+      {
+        "backgroundColor": "#FBC710",
+      },
+      {
+        "opacity": 1,
+      },
+      {
+        "alignItems": "center",
+        "borderRadius": 2,
+        "justifyContent": "center",
+        "padding": 15,
+        "transition": "opacity 120ms ease-out",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {},
+        undefined,
+        {
+          "color": "#0A0A0A",
+          "fontWeight": "bold",
+        },
+      ]
+    }
+  >
+    Press me
+  </Text>
+</View>
+`;
