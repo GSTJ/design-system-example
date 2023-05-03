@@ -2,8 +2,10 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
+    "baseUrl": "./",
     "paths": {
-      "app/*": ["packages/design-system/*"]
+      "design-system/*": ["packages/design-system/*"],
+      "tokens/*": ["packages/tokens/*"]
     }
   },
   "extends": "expo/tsconfig.base"

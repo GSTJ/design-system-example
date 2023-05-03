@@ -1,8 +1,11 @@
-import React from 'react';
-import { Preview } from '@storybook/react';
-import { useDarkMode } from 'storybook-dark-mode';
-import { KustomerThemeProvider } from '../src/components';
-import { lightTheme, darkTheme } from '../src/themes';
+import React from 'react'
+import { Preview } from '@storybook/react'
+import { useDarkMode } from 'storybook-dark-mode'
+import { Provider } from 'design-system/provider'
+import {
+  groupedLightTheme,
+  groupedDarkTheme,
+} from 'design-system/provider/Dripsy'
 
 const preview: Preview = {
   parameters: {
@@ -10,20 +13,17 @@ const preview: Preview = {
     controls: {
       matchers: {
         color: /(background|color)$/i,
-        date: /Date$/
-      }
+        date: /Date$/,
+      },
     },
-    darkMode: {
-      stylePreview: true
-    }
   },
   decorators: [
     (Story) => (
-      <KustomerThemeProvider theme={useDarkMode() ? darkTheme : lightTheme}>
+      <Provider theme={useDarkMode() ? groupedDarkTheme : groupedLightTheme}>
         <Story />
-      </KustomerThemeProvider>
-    )
-  ]
-};
+      </Provider>
+    ),
+  ],
+}
 
-export default preview;
+export default preview

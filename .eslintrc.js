@@ -11,6 +11,7 @@ module.exports = {
     'react/self-closing-comp': 'error',
     'react/display-name': 'off',
     'import/no-anonymous-default-export': 'off',
+    '@next/next/no-html-link-for-pages': 'off',
     'simple-import-sort/imports': [
       'error',
       {

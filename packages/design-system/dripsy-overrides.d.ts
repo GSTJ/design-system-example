@@ -1,4 +1,4 @@
-import { theme } from './provider/dripsy'
+import { theme } from './provider/Dripsy'
 
 type MyTheme = typeof theme
 declare module 'dripsy' {

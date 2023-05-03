@@ -1,6 +1,7 @@
+import React from 'react'
 import { StatusBar, useColorScheme } from 'react-native'
 
-import { Dripsy, groupedDarkTheme, groupedLightTheme } from './dripsy'
+import { Dripsy, groupedDarkTheme, groupedLightTheme } from './Dripsy'
 
 export const Provider = ({ children }: { children: React.ReactNode }) => {
   const colorMode = useColorScheme()
