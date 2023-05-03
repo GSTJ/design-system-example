@@ -3,7 +3,7 @@ import 'setimmediate'
 
 import React from 'react'
 
-import { Provider } from 'design-system/src/providers'
+import { Provider } from 'design-system/src/provider'
 import Head from 'next/head'
 import type { SolitoAppProps } from 'solito'
 

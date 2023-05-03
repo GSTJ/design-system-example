@@ -1,11 +1,7 @@
 import React from 'react'
 import { Preview } from '@storybook/react'
 import { useDarkMode } from 'storybook-dark-mode'
-import { Provider } from 'design-system/provider'
-import {
-  groupedLightTheme,
-  groupedDarkTheme,
-} from 'design-system/provider/Dripsy'
+import { Provider } from 'design-system/src/provider'
 
 const preview: Preview = {
   parameters: {
@@ -19,7 +15,7 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <Provider theme={useDarkMode() ? groupedDarkTheme : groupedLightTheme}>
+      <Provider colorMode={useDarkMode() ? 'dark' : 'light'}>
         <Story />
       </Provider>
     ),

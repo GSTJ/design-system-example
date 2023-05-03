@@ -13,6 +13,7 @@
     "@storybook/addon-links": "^7.0.2",
     "@storybook/addon-mdx-gfm": "^7.0.2",
     "@storybook/blocks": "^7.0.2",
+    "arcade-storybook-addon-rtl": "^0.0.12",
     "babel-loader": "^9.1.2",
     "design-system": "*",
     "file-loader": "^6.2.0",

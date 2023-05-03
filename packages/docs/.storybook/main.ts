@@ -6,6 +6,9 @@ const config: StorybookConfig = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/addon-mdx-gfm',
+    'storybook-dark-mode',
+    'arcade-storybook-addon-rtl',
     {
       name: '@storybook/addon-react-native-web',
       options: {
@@ -29,7 +32,7 @@ const config: StorybookConfig = {
     options: {},
   },
   docs: {
-    autodocs: 'tag',
+    autodocs: true,
   },
 }
 
