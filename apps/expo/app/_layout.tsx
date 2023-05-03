@@ -1,8 +1,7 @@
 import React from 'react'
 
+import { Provider } from 'design-system/provider'
 import { Stack } from 'expo-router'
-
-import { Provider } from '../../../packages/design-system/provider'
 
 export default () => (
   <Provider>
