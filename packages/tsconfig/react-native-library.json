@@ -9,6 +9,7 @@
     "lib": ["DOM", "ESNext"],
     "noEmit": true,
     "resolveJsonModule": true,
-    "target": "ESNext"
+    "target": "es6",
+    "module": "ESNext"
   }
 }

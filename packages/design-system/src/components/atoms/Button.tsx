@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ActivityIndicator, Pressable, Text } from 'dripsy'
+import { ActivityIndicator, Pressable, SxProp, Text } from 'dripsy'
 
 export interface ButtonProps
   extends Omit<React.ComponentProps<typeof Pressable>, 'variant'> {
@@ -21,14 +21,16 @@ export const Button: React.FC<ButtonProps> = ({
     style={({ hovered, pressed }) => ({
       opacity: hovered || pressed ? 0.7 : 1,
     })}
-    sx={{
-      transition: 'opacity 120ms ease-out',
-      padding: 15,
-      borderRadius: 2,
-      alignItems: 'center',
-      justifyContent: 'center',
-      ...sx,
-    }}
+    sx={
+      {
+        transition: 'opacity 120ms ease-out',
+        padding: 15,
+        borderRadius: 2,
+        alignItems: 'center',
+        justifyContent: 'center',
+        ...sx,
+      } as SxProp
+    }
     disabled={isLoading || disabled}
     variant={variant}
     {...props}
