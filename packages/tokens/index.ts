@@ -21,7 +21,7 @@ export const lightTheme = {
   $buttonText: baseColors.$black900,
 }
 
-export const darkTheme = {
+export const darkTheme: typeof lightTheme = {
   $primary: baseColors.$yellow800,
   $background: baseColors.$black800,
   $secondaryBackground: baseColors.$gray200,
