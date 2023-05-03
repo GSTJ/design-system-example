@@ -1,5 +1,5 @@
-import { darkTheme, defaultThemeProps, lightTheme } from 'app/tokens'
 import { DripsyFinalTheme, DripsyProvider, makeTheme } from 'dripsy'
+import { darkTheme, defaultThemeProps, lightTheme } from 'tokens'
 
 // https://www.dripsy.xyz/usage/theming/create
 export const theme = makeTheme(defaultThemeProps)
