@@ -2201,19 +2201,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dripsy/core@npm:^3.10.0":
-  version: 3.10.0
-  resolution: "@dripsy/core@npm:3.10.0"
-  dependencies:
-    "@expo/html-elements": ^0.2.0
-    "@react-native-community/hooks": ^2.6.0
-    "@theme-ui/css": ^0.4.0-rc.1
-    stable-hash: ^0.0.2
-    ts-toolbelt: ^9.6.0
-  checksum: a1e13ec6e42e8f2b7d2ec23fcf59f56bb8d2ca88d579fac4d7ec4fe6926e02fabb30b9209c2371fbd884dd412795809ad590ce44b5ad631c1d63fc57a1097362
-  languageName: node
-  linkType: hard
-
 "@egjs/hammerjs@npm:^2.0.17":
   version: 2.0.17
   resolution: "@egjs/hammerjs@npm:2.0.17"
@@ -3769,16 +3756,6 @@ __metadata:
   bin:
     react-native: build/bin.js
   checksum: f3c498c8cc660c53a75cfb8522748a26b589fa087d13a03225cd207dad61c592dfa59ebc26e5d9caf8cb210b8802922bc4a3c907e180273027bc738ee7cc6038
-  languageName: node
-  linkType: hard
-
-"@react-native-community/hooks@npm:^2.6.0":
-  version: 2.8.1
-  resolution: "@react-native-community/hooks@npm:2.8.1"
-  peerDependencies:
-    react: ">=16.8.0"
-    react-native: ">=0.59"
-  checksum: d1138c3203ebddcbeb7866724a22785df33e9f36b4b683ec90f5678b5eac9fe6e34eb22afd8aecf14145e17eb4df4fcddac8183f085476a90e658a5a7a7b45f0
   languageName: node
   linkType: hard
 
@@ -7116,13 +7093,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-react-native-web@npm:^0.19.4":
-  version: 0.19.4
-  resolution: "babel-plugin-react-native-web@npm:0.19.4"
-  checksum: 263315484e21527091c1674833eeab51edc87392ee161fec144c994addbd6f976765067ec11265d3df4748e4951d471da4fc992b59d38705272acc6f2bd8a3a8
-  languageName: node
-  linkType: hard
-
 "babel-plugin-react-native-web@npm:~0.18.10":
   version: 0.18.12
   resolution: "babel-plugin-react-native-web@npm:0.18.12"
@@ -8904,11 +8874,13 @@ __metadata:
     "@storybook/react": ^7.0.7
     "@storybook/testing-library": ^0.0.14-next.2
     arcade-storybook-addon-rtl: ^0.0.12
+    babel-loader: ^9.1.2
     babel-plugin-transform-inline-environment-variables: ^0.4.4
-    dripsy: ^3.6.0
+    dripsy: ^4.1.0
     expo-router: ^1.5.3
     solito: 3.0.0
     storybook: ^7.0.7
+    storybook-dark-mode: ^3.0.0
   languageName: unknown
   linkType: soft
 
@@ -8970,30 +8942,6 @@ __metadata:
   checksum: fa05e18324510d7283f55862f3161c6759a3f2f8dbce491a2fc14c8324c498286c54282c1f0e933cb930da8419b30679389499b919122952a4f8592362ef4615
   languageName: node
   linkType: hard
-
-"docs@workspace:packages/docs":
-  version: 0.0.0-use.local
-  resolution: "docs@workspace:packages/docs"
-  dependencies:
-    "@expo/next-adapter": 5.0.2
-    "@prisma/nextjs-monorepo-workaround-plugin": ^4.13.0
-    "@svgr/webpack": ^7.0.0
-    "@types/node": 17.0.21
-    babel-loader: ^9.1.2
-    babel-plugin-react-native-web: ^0.19.4
-    design-system: "*"
-    eslint-config-next: 13.2.0
-    file-loader: ^6.2.0
-    next: 13.2.0
-    raf: ^3.4.1
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-native-web: ^0.19.4
-    setimmediate: ^1.0.5
-    storybook-dark-mode: ^3.0.0
-    tokens: "*"
-  languageName: unknown
-  linkType: soft
 
 "doctrine@npm:^2.1.0":
   version: 2.1.0
@@ -9129,12 +9077,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dripsy@npm:^3.6.0":
-  version: 3.10.0
-  resolution: "dripsy@npm:3.10.0"
+"dripsy@npm:*, dripsy@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "dripsy@npm:4.1.0"
   dependencies:
-    "@dripsy/core": ^3.10.0
-  checksum: 828f6c126c06a2ff946c9aa889d6c11f7711887d9a7fb6c1ab6dd00e3ec1f9b043fb3a7902d46d913ee148f6c4cf5a3a0b6fbaf54be3c9ac69786e947aee9e4a
+    "@expo/html-elements": ^0.2.0
+    "@theme-ui/css": ^0.4.0-rc.1
+    stable-hash: ^0.0.2
+    ts-toolbelt: ^9.6.0
+  checksum: 331710a95df341dcbf0bcd9a68cb7d4b25f672c490021b921b2a89b06bb9e375eede85fa64ed945f25187ea2b138518d411a6e9805a3774dfa051e99850e5799
   languageName: node
   linkType: hard
 
@@ -13797,13 +13748,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"memoize-one@npm:^6.0.0":
-  version: 6.0.0
-  resolution: "memoize-one@npm:6.0.0"
-  checksum: f185ea69f7cceae5d1cb596266dcffccf545e8e7b4106ec6aa93b71ab9d16460dd118ac8b12982c55f6d6322fcc1485de139df07eacffaae94888b9b3ad7675f
-  languageName: node
-  linkType: hard
-
 "memoizerific@npm:^1.11.3":
   version: 1.11.3
   resolution: "memoizerific@npm:1.11.3"
@@ -16466,7 +16410,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.2.0, react-dom@npm:^18.2.0":
+"react-dom@npm:18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -16706,25 +16650,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-web@npm:^0.19.4":
-  version: 0.19.4
-  resolution: "react-native-web@npm:0.19.4"
-  dependencies:
-    "@babel/runtime": ^7.18.6
-    fbjs: ^3.0.4
-    inline-style-prefixer: ^6.0.1
-    memoize-one: ^6.0.0
-    normalize-css-color: ^1.0.2
-    nullthrows: ^1.1.1
-    postcss-value-parser: ^4.2.0
-    styleq: ^0.1.2
-  peerDependencies:
-    react: ^18.0.0
-    react-dom: ^18.0.0
-  checksum: e8cf1f3d01a7d160bd02a28c90d239b1dcb7ee0661344c74b908cf205f9f1acf8dd87307cf1a1a30dfd4fe1604f49820f68e5cf721cd5e8693bd16e3d5a7e87b
-  languageName: node
-  linkType: hard
-
 "react-native-web@npm:~0.18.11":
   version: 0.18.12
   resolution: "react-native-web@npm:0.18.12"
@@ -16872,7 +16797,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0, react@npm:^18.2.0":
+"react@npm:18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -18052,7 +17977,7 @@ __metadata:
     eslint-plugin-simple-import-sort: ^10.0.0
     eslint-plugin-unused-imports: ^2.0.0
     turbo: ^1.4.2
-    typescript: ^4.7.4
+    typescript: ^5.0.4
   languageName: unknown
   linkType: soft
 
@@ -19045,6 +18970,8 @@ __metadata:
 "tokens@*, tokens@workspace:packages/tokens":
   version: 0.0.0-use.local
   resolution: "tokens@workspace:packages/tokens"
+  dependencies:
+    dripsy: "*"
   languageName: unknown
   linkType: soft
 
@@ -19366,7 +19293,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.7.4, typescript@npm:^4.9.4":
+"typescript@npm:^4.9.4":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
   bin:
@@ -19376,13 +19303,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.7.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>":
+"typescript@npm:^5.0.4":
+  version: 5.0.4
+  resolution: "typescript@npm:5.0.4"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 82b94da3f4604a8946da585f7d6c3025fff8410779e5bde2855ab130d05e4fd08938b9e593b6ebed165bda6ad9292b230984f10952cf82f0a0ca07bbeaa08172
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>":
   version: 4.9.5
   resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: ab417a2f398380c90a6cf5a5f74badd17866adf57f1165617d6a551f059c3ba0a3e4da0d147b3ac5681db9ac76a303c5876394b13b3de75fdd5b1eaa06181c9d
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^5.0.4#~builtin<compat/typescript>":
+  version: 5.0.4
+  resolution: "typescript@patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=1f5320"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 6a1fe9a77bb9c5176ead919cc4a1499ee63e46b4e05bf667079f11bf3a8f7887f135aa72460a4c3b016e6e6bb65a822cb8689a6d86cbfe92d22cc9f501f09213
   languageName: node
   linkType: hard
 

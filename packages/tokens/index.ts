@@ -1,5 +1,3 @@
-import { makeTheme } from 'dripsy'
-
 export const baseColors = {
   $white: '#FFF',
   $gray100: '#F8F8F8',
@@ -12,30 +10,28 @@ export const baseColors = {
   $yellow800: '#FBC710',
 }
 
-export const lightTheme: Parameters<typeof makeTheme>[0] = {
-  colors: {
-    $primary: baseColors.$yellow800,
-    $background: baseColors.$white,
-    $secondaryBackground: baseColors.$gray200,
-    $border: baseColors.$gray200,
-    $text: baseColors.$black900,
-    $secondaryText: baseColors.$gray500,
-    $placeholder: baseColors.$gray400,
-    $buttonText: baseColors.$black900,
-  },
+export const lightTheme = {
+  $primary: baseColors.$yellow800,
+  $background: baseColors.$white,
+  $secondaryBackground: baseColors.$gray200,
+  $border: baseColors.$gray200,
+  $text: baseColors.$black900,
+  $secondaryText: baseColors.$gray500,
+  $placeholder: baseColors.$gray400,
+  $buttonText: baseColors.$black900,
 }
 
-export const darkTheme: Parameters<typeof makeTheme>[0] = {
-  colors: {
-    $primary: baseColors.$yellow800,
-    $background: baseColors.$black800,
-    $secondaryBackground: baseColors.$gray200,
-    $border: baseColors.$black700,
-    $text: baseColors.$gray100,
-    $secondaryText: baseColors.$gray400,
-    $placeholder: baseColors.$gray400,
-    $buttonText: baseColors.$black900,
-  },
+export const darkTheme = {
+  $primary: baseColors.$yellow800,
+  $background: baseColors.$black800,
+  $secondaryBackground: baseColors.$gray200,
+  $border: baseColors.$black700,
+  $text: baseColors.$gray100,
+  $secondaryText: baseColors.$gray400,
+  $placeholder: baseColors.$gray400,
+  $buttonText: baseColors.$black900,
 }
 
-export const defaultThemeProps: Parameters<typeof makeTheme>[0] = {}
+export const defaultThemeProps = {
+  colors: { ...baseColors, ...lightTheme },
+}

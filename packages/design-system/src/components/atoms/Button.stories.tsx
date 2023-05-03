@@ -9,6 +9,13 @@ export default {
   component: Button,
   args: {
     children: 'Button',
+    variant: 'layout.primary',
+  },
+  argTypes: {
+    variant: {
+      control: 'select',
+      options: ['layout.primary', 'layout.ghost'],
+    },
   },
 } as Meta<typeof Button>
 

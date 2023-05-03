@@ -1,20 +1,32 @@
 import React from 'react'
 
 import { DripsyFinalTheme, DripsyProvider, makeTheme } from 'dripsy'
-import { darkTheme, defaultThemeProps, lightTheme } from 'tokens'
+import { darkTheme, defaultThemeProps } from 'tokens'
 
 // https://www.dripsy.xyz/usage/theming/create
-export const theme = makeTheme(defaultThemeProps) as DripsyFinalTheme
+export const theme = makeTheme({
+  ...defaultThemeProps,
+  layout: {
+    primary: {
+      backgroundColor: '$primary',
+    },
+    ghost: {
+      backgroundColor: 'transparent',
+      borderColor: '$primary',
+      borderWidth: 2,
+    },
+  },
+})
 
 export const groupedDarkTheme = {
   ...theme,
-  ...darkTheme,
-} as DripsyFinalTheme
+  colors: {
+    ...theme.colors,
+    ...darkTheme,
+  },
+}
 
-export const groupedLightTheme = {
-  ...theme,
-  ...lightTheme,
-} as DripsyFinalTheme
+export const groupedLightTheme = theme
 
 type DripsyProps = {
   children: React.ReactNode
