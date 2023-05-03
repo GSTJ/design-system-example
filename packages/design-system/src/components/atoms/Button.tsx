@@ -2,7 +2,7 @@ import React from 'react'
 
 import { ActivityIndicator, Pressable, Text } from 'dripsy'
 
-interface ButtonProps extends React.ComponentProps<typeof Pressable> {
+export interface ButtonProps extends React.ComponentProps<typeof Pressable> {
   children: React.ReactNode
   isLoading?: boolean
 }

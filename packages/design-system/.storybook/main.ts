@@ -1,7 +1,7 @@
 import { StorybookConfig } from '@storybook/preset-react-webpack'
 
 const config: StorybookConfig = {
-  stories: ['../stories/**/*.mdx', '../stories/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ['../**/*.mdx', '../**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
@@ -18,7 +18,6 @@ const config: StorybookConfig = {
           'solito',
           'dripsy',
           '@dripsy/core',
-          'design-system',
           'tokens',
           'react-native-reanimated',
           '@expo/html-elements',

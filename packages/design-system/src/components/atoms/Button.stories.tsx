@@ -1,5 +1,8 @@
+import React from 'react'
+
 import type { Meta, StoryFn } from '@storybook/react'
-import { Button } from 'design-system/src/components/atoms/Button'
+
+import { Button } from './Button'
 
 export default {
   title: 'Atoms/Button',

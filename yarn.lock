@@ -8893,10 +8893,22 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "design-system@workspace:packages/design-system"
   dependencies:
+    "@storybook/addon-actions": ^7.0.2
+    "@storybook/addon-essentials": ^7.0.2
+    "@storybook/addon-interactions": ^7.0.2
+    "@storybook/addon-links": ^7.0.2
+    "@storybook/addon-mdx-gfm": ^7.0.2
+    "@storybook/addon-react-native-web": ^0.0.20
+    "@storybook/blocks": ^7.0.2
+    "@storybook/nextjs": ^7.0.7
+    "@storybook/react": ^7.0.7
+    "@storybook/testing-library": ^0.0.14-next.2
+    arcade-storybook-addon-rtl: ^0.0.12
     babel-plugin-transform-inline-environment-variables: ^0.4.4
     dripsy: ^3.6.0
     expo-router: ^1.5.3
     solito: 3.0.0
+    storybook: ^7.0.7
   languageName: unknown
   linkType: soft
 
@@ -8965,19 +8977,8 @@ __metadata:
   dependencies:
     "@expo/next-adapter": 5.0.2
     "@prisma/nextjs-monorepo-workaround-plugin": ^4.13.0
-    "@storybook/addon-actions": ^7.0.2
-    "@storybook/addon-essentials": ^7.0.2
-    "@storybook/addon-interactions": ^7.0.2
-    "@storybook/addon-links": ^7.0.2
-    "@storybook/addon-mdx-gfm": ^7.0.2
-    "@storybook/addon-react-native-web": ^0.0.20
-    "@storybook/blocks": ^7.0.2
-    "@storybook/nextjs": ^7.0.7
-    "@storybook/react": ^7.0.7
-    "@storybook/testing-library": ^0.0.14-next.2
     "@svgr/webpack": ^7.0.0
     "@types/node": 17.0.21
-    arcade-storybook-addon-rtl: ^0.0.12
     babel-loader: ^9.1.2
     babel-plugin-react-native-web: ^0.19.4
     design-system: "*"
@@ -8989,7 +8990,6 @@ __metadata:
     react-dom: ^18.2.0
     react-native-web: ^0.19.4
     setimmediate: ^1.0.5
-    storybook: ^7.0.7
     storybook-dark-mode: ^3.0.0
     tokens: "*"
   languageName: unknown

@@ -2,6 +2,10 @@
   "version": "0.0.0",
   "name": "design-system",
   "main": "index.ts",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
   "dependencies": {
     "dripsy": "^3.6.0",
     "expo-router": "^1.5.3",
@@ -9,6 +13,18 @@
   },
   "sideEffects": false,
   "devDependencies": {
-    "babel-plugin-transform-inline-environment-variables": "^0.4.4"
+    "@storybook/addon-actions": "^7.0.2",
+    "@storybook/addon-essentials": "^7.0.2",
+    "@storybook/addon-interactions": "^7.0.2",
+    "@storybook/addon-links": "^7.0.2",
+    "@storybook/addon-mdx-gfm": "^7.0.2",
+    "@storybook/addon-react-native-web": "^0.0.20",
+    "@storybook/blocks": "^7.0.2",
+    "@storybook/nextjs": "^7.0.7",
+    "@storybook/react": "^7.0.7",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "arcade-storybook-addon-rtl": "^0.0.12",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.4",
+    "storybook": "^7.0.7"
   }
 }
