@@ -8919,9 +8919,11 @@ __metadata:
     jest: ^29.5.0
     jest-environment-jsdom: ^29.5.0
     jest-transformer-svg: ^2.0.1
+    react-native: 0.71.7
     react-native-reanimated: ~2.14.4
     react-native-safe-area-context: 4.5.0
     react-native-safe-area-view: ^1.1.1
+    react-native-web: ~0.18.11
     react-test-renderer: ^18.2.0
     solito: 3.0.0
     storybook: ^7.0.8
@@ -8932,7 +8934,6 @@ __metadata:
     next: "*"
     react: "*"
     react-dom: "*"
-    react-native: "*"
     tokens: "*"
   languageName: unknown
   linkType: soft
