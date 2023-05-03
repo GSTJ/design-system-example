@@ -1,9 +1,9 @@
 {
   "expo": {
     "name": "Design System Example",
-    "slug": "Design System Example",
+    "slug": "design-system-example",
     "version": "1.0.0",
-    "scheme": "Design System Example",
+    "scheme": "design-system-example",
     "platforms": ["ios", "android"],
     "ios": {
       "bundleIdentifier": "com.designsystemexample"
