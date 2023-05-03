@@ -15415,6 +15415,7 @@ __metadata:
     file-loader: ^6.2.0
     next: 13.2.0
     raf: ^3.4.1
+    react-dom: ^18.2.0
     setimmediate: ^1.0.5
   peerDependencies:
     eslint: "*"
@@ -17056,7 +17057,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.2.0":
+"react-dom@npm:18.2.0, react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
