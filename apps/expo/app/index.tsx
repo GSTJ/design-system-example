@@ -1,5 +1,5 @@
 import React from 'react'
-import { View } from 'react-native'
+import { StatusBar, View } from 'react-native'
 
 import { useSafeArea } from 'design-system/src/hooks/useSafeArea'
 
@@ -12,6 +12,8 @@ export default () => {
         paddingTop: insets.top,
         paddingBottom: insets.bottom,
       }}
-    />
+    >
+      <StatusBar barStyle="dark-content" />
+    </View>
   )
 }

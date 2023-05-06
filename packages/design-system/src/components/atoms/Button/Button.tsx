@@ -2,11 +2,9 @@ import React from 'react'
 
 import { ActivityIndicator, Pressable, SxProp, Text } from 'dripsy'
 
-export interface ButtonProps
-  extends Omit<React.ComponentProps<typeof Pressable>, 'variant'> {
+export interface ButtonProps extends React.ComponentProps<typeof Pressable> {
   children: React.ReactNode
   isLoading?: boolean
-  variant?: 'layout.primary' | 'layout.ghost'
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -14,7 +12,6 @@ export const Button: React.FC<ButtonProps> = ({
   sx,
   isLoading,
   disabled,
-  variant = 'layout.primary',
   ...props
 }) => (
   <Pressable
@@ -23,6 +20,7 @@ export const Button: React.FC<ButtonProps> = ({
     })}
     sx={
       {
+        backgroundColor: '$buttonBackground',
         transition: 'opacity 120ms ease-out',
         padding: 15,
         borderRadius: 2,
@@ -32,10 +30,15 @@ export const Button: React.FC<ButtonProps> = ({
       } as SxProp
     }
     disabled={isLoading || disabled}
-    variant={variant}
     {...props}
   >
-    <Text sx={{ fontWeight: 'bold', color: '$buttonText' }}>
+    <Text
+      sx={{
+        fontWeight: 'bold',
+        color: '$buttonText',
+        fontSize: '',
+      }}
+    >
       {isLoading ? (
         <ActivityIndicator size={16} color="$buttonText" />
       ) : (

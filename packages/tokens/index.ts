@@ -19,6 +19,7 @@ export const lightTheme = {
   $secondaryText: baseColors.$gray500,
   $placeholder: baseColors.$gray400,
   $buttonText: baseColors.$black900,
+  $buttonBackground: baseColors.$yellow800,
 }
 
 export const darkTheme: typeof lightTheme = {
@@ -30,8 +31,9 @@ export const darkTheme: typeof lightTheme = {
   $secondaryText: baseColors.$gray400,
   $placeholder: baseColors.$gray400,
   $buttonText: baseColors.$black900,
+  $buttonBackground: baseColors.$yellow800,
 }
 
 export const defaultThemeProps = {
   colors: { ...baseColors, ...lightTheme },
-}
+} as const

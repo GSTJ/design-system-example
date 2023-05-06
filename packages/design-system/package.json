@@ -11,11 +11,13 @@
     "babel-preset-expo": "^9.3.2",
     "dripsy": "^4.1.0",
     "expo-router": "^1.5.3",
+    "fs": "^0.0.1-security",
     "react-native-reanimated": "~2.14.4",
     "react-native-safe-area-context": "4.5.0",
     "react-native-safe-area-view": "^1.1.1",
     "react-test-renderer": "^18.2.0",
-    "solito": "3.0.0"
+    "solito": "3.0.0",
+    "timers": "^0.1.1"
   },
   "peerDependencies": {
     "expo": "*",

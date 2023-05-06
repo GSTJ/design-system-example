@@ -6,16 +6,6 @@ import { darkTheme, defaultThemeProps } from 'tokens'
 // https://www.dripsy.xyz/usage/theming/create
 export const theme = makeTheme({
   ...defaultThemeProps,
-  layout: {
-    primary: {
-      backgroundColor: '$primary',
-    },
-    ghost: {
-      backgroundColor: 'transparent',
-      borderColor: '$primary',
-      borderWidth: 2,
-    },
-  },
 })
 
 export const groupedDarkTheme = {

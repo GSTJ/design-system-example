@@ -8916,6 +8916,7 @@ __metadata:
     babel-preset-expo: ^9.3.2
     dripsy: ^4.1.0
     expo-router: ^1.5.3
+    fs: ^0.0.1-security
     jest: ^29.5.0
     jest-environment-jsdom: ^29.5.0
     jest-transformer-svg: ^2.0.1
@@ -8928,6 +8929,7 @@ __metadata:
     solito: 3.0.0
     storybook: ^7.0.8
     storybook-dark-mode: ^3.0.0
+    timers: ^0.1.1
     ts-jest: ^29.1.0
   peerDependencies:
     expo: "*"
@@ -11054,6 +11056,13 @@ __metadata:
   version: 1.0.0
   resolution: "fs.realpath@npm:1.0.0"
   checksum: 99ddea01a7e75aa276c250a04eedeffe5662bce66c65c07164ad6264f9de18fb21be9433ead460e54cff20e31721c811f4fb5d70591799df5f85dce6d6746fd0
+  languageName: node
+  linkType: hard
+
+"fs@npm:^0.0.1-security":
+  version: 0.0.1-security
+  resolution: "fs@npm:0.0.1-security"
+  checksum: 53c6230e1faae9fa32c1df82c16a84b51b1243d20f3da2b64bd110bb472b73b9185169b703e008356e3cdc92d155088b617d9d39a63b5227a30b3621baad7f5d
   languageName: node
   linkType: hard
 
@@ -15421,7 +15430,6 @@ __metadata:
     eslint: "*"
     expo: "*"
     react: "*"
-    react-dom: "*"
     react-native-web: "*"
     tokens: "*"
     webpack: "*"
@@ -19550,6 +19558,13 @@ __metadata:
   version: 2.3.8
   resolution: "through@npm:2.3.8"
   checksum: a38c3e059853c494af95d50c072b83f8b676a9ba2818dcc5b108ef252230735c54e0185437618596c790bbba8fcdaef5b290405981ffa09dce67b1f1bf190cbd
+  languageName: node
+  linkType: hard
+
+"timers@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "timers@npm:0.1.1"
+  checksum: 3f75b95c19e7adbcfdee6df78317d731b0a33f7d81bfaeb84b0c6869c42f07da44ba0173705bb13cc58fb4caa6afc52eabb48e5ba3f1cbd245a9680e1ef0617e
   languageName: node
   linkType: hard
 

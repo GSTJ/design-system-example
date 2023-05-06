@@ -1,23 +1,18 @@
 import React from 'react'
 import { fireEvent, render } from '@testing-library/react-native'
 
-import { Provider } from '../../provider'
+import { Provider } from '../../../provider'
 
-import { Button, ButtonProps } from './Button'
-
-type ButtonVariants = ButtonProps['variant'][]
+import { Button } from './Button'
 
 describe('Button', () => {
-  it.each(['layout.ghost', 'layout.primary'] as ButtonVariants)(
-    'renders %s variant',
-    (variant) => {
-      const component = render(<Button variant={variant}>Press me</Button>, {
-        wrapper: Provider,
-      })
+  it('renders correctly', (variant) => {
+    const component = render(<Button>Press me</Button>, {
+      wrapper: Provider,
+    })
 
-      expect(component).toMatchSnapshot()
-    }
-  )
+    expect(component).toMatchSnapshot()
+  })
 
   it('fires onPress when pressed', () => {
     const onPress = jest.fn()
