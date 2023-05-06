@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ActivityIndicator, Pressable, SxProp, Text } from 'dripsy'
+import { ActivityIndicator, Pressable, Text } from 'dripsy'
 
 export interface ButtonProps extends React.ComponentProps<typeof Pressable> {
   children: React.ReactNode
@@ -9,7 +9,6 @@ export interface ButtonProps extends React.ComponentProps<typeof Pressable> {
 
 export const Button: React.FC<ButtonProps> = ({
   children,
-  sx,
   isLoading,
   disabled,
   ...props
@@ -18,17 +17,14 @@ export const Button: React.FC<ButtonProps> = ({
     style={({ hovered, pressed }) => ({
       opacity: hovered || pressed ? 0.7 : 1,
     })}
-    sx={
-      {
-        backgroundColor: '$buttonBackground',
-        transition: 'opacity 120ms ease-out',
-        padding: 15,
-        borderRadius: 2,
-        alignItems: 'center',
-        justifyContent: 'center',
-        ...sx,
-      } as SxProp
-    }
+    sx={{
+      backgroundColor: '$buttonBackground',
+      transition: 'opacity 120ms ease-out',
+      padding: '$base',
+      borderRadius: '$small',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}
     disabled={isLoading || disabled}
     {...props}
   >
@@ -36,7 +32,7 @@ export const Button: React.FC<ButtonProps> = ({
       sx={{
         fontWeight: 'bold',
         color: '$buttonText',
-        fontSize: '',
+        fontSize: '$base',
       }}
     >
       {isLoading ? (

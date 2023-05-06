@@ -35,5 +35,14 @@ export const darkTheme: typeof lightTheme = {
 }
 
 export const defaultThemeProps = {
+  fontSizes: {
+    $base: 16,
+  },
+  radii: {
+    $small: 2,
+  },
+  space: {
+    $base: 15,
+  },
   colors: { ...baseColors, ...lightTheme },
 } as const

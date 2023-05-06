@@ -4,9 +4,7 @@ import { DripsyFinalTheme, DripsyProvider, makeTheme } from 'dripsy'
 import { darkTheme, defaultThemeProps } from 'tokens'
 
 // https://www.dripsy.xyz/usage/theming/create
-export const theme = makeTheme({
-  ...defaultThemeProps,
-})
+export const theme = makeTheme(defaultThemeProps)
 
 export const groupedDarkTheme = {
   ...theme,

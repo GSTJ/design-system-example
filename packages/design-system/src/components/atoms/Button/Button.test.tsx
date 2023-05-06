@@ -6,7 +6,7 @@ import { Provider } from '../../../provider'
 import { Button } from './Button'
 
 describe('Button', () => {
-  it('renders correctly', (variant) => {
+  it('renders correctly', () => {
     const component = render(<Button>Press me</Button>, {
       wrapper: Provider,
     })
